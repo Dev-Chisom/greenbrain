@@ -1,0 +1,164 @@
+/* global styles */
+
+:root {
+  box-sizing: border-box;
+  --text-dark: #1a051d;
+  --primary-green: #88edcf;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --grey-color: #eee;
+  --alert: red;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: var(--text-dark);
+}
+
+a:link {
+  color: inherit;
+  margin-left: 5px;
+}
+
+.container {
+  background: var(--primary-green);
+  min-height: 100vh;
+  padding: 5vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----------end of global styles-------------- */
+
+/* form styles */
+
+.container_form {
+  position: relative;
+  width: 98%;
+  max-width: 480px;
+  background: #fff;
+  padding: 5vh 0 0;
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem;
+}
+
+.form_title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.form_group {
+  border: 1px solid var(--grey-color);
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 7px;
+  min-width: 80%;
+}
+
+.form_label {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: block;
+}
+
+.form_label::after {
+  content: '*';
+  color: var(--alert);
+  margin-left: 0.5em;
+}
+
+.form_control {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  background: var(--grey-color);
+  font-size: 0.9rem;
+  padding: 8px;
+}
+.form_control::placeholder {
+  font-family: inherit;
+}
+.form_control:focus,
+.submit_button:focus {
+  outline-color: var(--primary-green);
+}
+
+.error-message {
+  display: block;
+  color: var(--alert);
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 5px;
+  display: none;
+}
+.error .error-message {
+  display: block;
+}
+.form_button {
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+.submit_button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #40e0d0;
+  color: #fff;
+  background: var(--primary-green);
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.form_login {
+  position: relative;
+  bottom: 0;
+  padding: 1rem 0 2.5rem;
+  background: var(--grey-color);
+  width: 100%;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+.form_pass {
+  position: relative;
+  bottom: 0;
+  padding: 1.5rem 1.5rem 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.form_pass a {
+  text-decoration: none;
+}
+.form_pass a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .container {
+    padding: 0;
+  }
+}
+
+/* ----------------end of form styles -------------------- */

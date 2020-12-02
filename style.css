@@ -547,3 +547,52 @@ a {
     #ffffff
   );
 }
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.btn-box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-blue) !important;
+}
+
+.btn-box button:hover {
+  color: var(--soft-red) !important;
+}
+
+/* .content-left {
+  flex-basis: 50%;
+  margin: 2rem;
+}
+.content-right {
+  flex-basis: 50%;
+  margin: 2rem;
+} */
+.content-left img {
+  width: 100%;
+}
+
+#content2 {
+  display: none;
+}
+#content3 {
+  display: none;
+}
+/* .hero {
+  width: 80%;
+  height: 450px;
+  position: relative;
+  margin: 100px auto;
+  overflow: hidden;
+  z-index: 100;
+} */
